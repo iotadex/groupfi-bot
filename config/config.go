@@ -39,4 +39,5 @@ func Load() {
 	}
 	HttpPort = all.HttpPort
 	SendUrl = all.SendUrl
+	ChatAccounts = all.ChatAccounts
 }

@@ -1,3 +1,5 @@
-.gitignor
+.gitignore
 groupfibot
 config/config.json
+logs
+agents.csv

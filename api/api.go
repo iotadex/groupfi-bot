@@ -28,11 +28,11 @@ func RecieveMsg(c *gin.Context) {
 	}
 
 	if !service.ReceiveNewMsg(p.Account, p.GroupId, p.Message) {
-		slog.Error("group is not exit", "account", p.Account, "groupid", p.GroupId)
+		slog.Error("group is not exist", "account", p.Account, "groupid", p.GroupId)
 		c.JSON(http.StatusOK, gin.H{
 			"result":   false,
 			"err-code": 2,
-			"err-msg":  "group is not exit",
+			"err-msg":  "group is not exist",
 		})
 		return
 	}
